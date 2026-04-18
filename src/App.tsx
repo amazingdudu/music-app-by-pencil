@@ -8,7 +8,7 @@ import Profile from './pages/Profile'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <PlayerProvider>
         <Routes>
           <Route path="/" element={<Layout />}>
